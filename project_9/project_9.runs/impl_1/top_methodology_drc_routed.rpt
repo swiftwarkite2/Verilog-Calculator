@@ -1,0 +1,463 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Wed Jun  4 15:02:05 2025
+| Host         : DESKTOP-DKV49J6 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+| Design       : top
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 85
++-----------+----------+--------------------------------+------------+
+| Rule      | Severity | Description                    | Violations |
++-----------+----------+--------------------------------+------------+
+| TIMING-16 | Warning  | Large setup violation          | 15         |
+| TIMING-18 | Warning  | Missing input or output delay  | 17         |
+| TIMING-20 | Warning  | Non-clocked latch              | 52         |
+| LATCH-1   | Advisory | Existing latches in the design | 1          |
++-----------+----------+--------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.779 ns between U1/U2/U1/PC_reg[7]_replica/C (clocked by sys_clk_pin) and U1/U2/U1/MAR_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.921 ns between U1/U2/U1/PC_reg[7]_replica/C (clocked by sys_clk_pin) and U1/U2/U1/PC_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -2.226 ns between U1/U2/U1/PC_reg[7]_replica/C (clocked by sys_clk_pin) and U1/U2/U1/A_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -2.489 ns between U1/U2/U1/PC_reg[7]_replica/C (clocked by sys_clk_pin) and U1/U2/U1/IR_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -2.577 ns between U1/U2/U1/PC_reg[7]_replica/C (clocked by sys_clk_pin) and U1/U2/U1/B_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -3.119 ns between U1/U2/U1/PC_reg[7]_replica/C (clocked by sys_clk_pin) and U1/U2/U1/IR_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -3.306 ns between U1/U2/U1/PC_reg[7]_replica/C (clocked by sys_clk_pin) and U1/U2/U1/PC_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -3.585 ns between U1/U2/U1/PC_reg[7]_replica/C (clocked by sys_clk_pin) and U1/U2/U1/MAR_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -3.682 ns between U1/U2/U1/PC_reg[7]_replica/C (clocked by sys_clk_pin) and U1/U2/U1/A_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -4.120 ns between U1/U2/U1/PC_reg[7]_replica/C (clocked by sys_clk_pin) and U1/U2/U1/B_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -5.238 ns between U1/U2/U1/PC_reg[7]_replica/C (clocked by sys_clk_pin) and U1/U2/U1/A_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -5.276 ns between U1/U2/U1/PC_reg[7]_replica/C (clocked by sys_clk_pin) and U1/U2/U1/IR_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -5.337 ns between U1/U2/U1/PC_reg[7]_replica/C (clocked by sys_clk_pin) and U1/U2/U1/PC_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -5.365 ns between U1/U2/U1/PC_reg[7]_replica/C (clocked by sys_clk_pin) and U1/U2/U1/MAR_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -5.405 ns between U1/U2/U1/PC_reg[7]_replica/C (clocked by sys_clk_pin) and U1/U2/U1/B_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on btnU relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on led[0] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on led[10] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on led[11] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on led[12] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on led[13] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on led[14] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on led[15] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on led[1] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on led[2] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on led[3] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on led[4] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on led[5] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on led[6] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on led[7] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on led[8] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on led[9] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch U1/U1/U4/data_out_reg[0] cannot be properly analyzed as its control pin U1/U1/U4/data_out_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch U1/U1/U4/data_out_reg[1] cannot be properly analyzed as its control pin U1/U1/U4/data_out_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch U1/U1/U4/data_out_reg[2] cannot be properly analyzed as its control pin U1/U1/U4/data_out_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch U1/U1/U4/data_out_reg[3] cannot be properly analyzed as its control pin U1/U1/U4/data_out_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch U1/U1/U4/data_out_reg[4] cannot be properly analyzed as its control pin U1/U1/U4/data_out_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch U1/U1/U4/data_out_reg[5] cannot be properly analyzed as its control pin U1/U1/U4/data_out_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch U1/U1/U4/data_out_reg[6] cannot be properly analyzed as its control pin U1/U1/U4/data_out_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch U1/U1/U4/data_out_reg[7] cannot be properly analyzed as its control pin U1/U1/U4/data_out_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch U1/U2/U2/ALU_Sel_reg[0] cannot be properly analyzed as its control pin U1/U2/U2/ALU_Sel_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch U1/U2/U2/ALU_Sel_reg[1] cannot be properly analyzed as its control pin U1/U2/U2/ALU_Sel_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch U1/U2/U2/A_Load_reg cannot be properly analyzed as its control pin U1/U2/U2/A_Load_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch U1/U2/U2/B_Load_reg cannot be properly analyzed as its control pin U1/U2/U2/B_Load_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch U1/U2/U2/Bus1_Sel_reg[0] cannot be properly analyzed as its control pin U1/U2/U2/Bus1_Sel_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch U1/U2/U2/Bus2_Sel_reg[0] cannot be properly analyzed as its control pin U1/U2/U2/Bus2_Sel_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch U1/U2/U2/Bus2_Sel_reg[1] cannot be properly analyzed as its control pin U1/U2/U2/Bus2_Sel_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch U1/U2/U2/CCR_Load_reg cannot be properly analyzed as its control pin U1/U2/U2/CCR_Load_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[0] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[10] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[11] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[12] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[13] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[14] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[15] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[16] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[17] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[18] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[19] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[1] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[20] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[21] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[22] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[23] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[24] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[25] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[26] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[27] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[28] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[29] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[2] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[30] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[3] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[4] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[5] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[6] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[7] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[8] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch U1/U2/U2/FSM_onehot_next_state_reg[9] cannot be properly analyzed as its control pin U1/U2/U2/FSM_onehot_next_state_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch U1/U2/U2/IR_Load_reg cannot be properly analyzed as its control pin U1/U2/U2/IR_Load_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#49 Warning
+Non-clocked latch  
+The latch U1/U2/U2/MAR_Load_reg cannot be properly analyzed as its control pin U1/U2/U2/MAR_Load_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#50 Warning
+Non-clocked latch  
+The latch U1/U2/U2/PC_Inc_reg cannot be properly analyzed as its control pin U1/U2/U2/PC_Inc_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#51 Warning
+Non-clocked latch  
+The latch U1/U2/U2/PC_Load_reg cannot be properly analyzed as its control pin U1/U2/U2/PC_Load_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#52 Warning
+Non-clocked latch  
+The latch U1/U2/U2/write_reg cannot be properly analyzed as its control pin U1/U2/U2/write_reg/G is not reached by a timing clock
+Related violations: <none>
+
+LATCH-1#1 Advisory
+Existing latches in the design  
+There are 52 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+Related violations: <none>
+
+
