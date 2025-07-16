@@ -1,0 +1,11 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+D:/xilinx/projects/project_9/project_9.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+D:/xilinx/projects/project_9/project_9.srcs/sim_1/new/memory_TB.v,1730072681,verilog,,,,memory_TB,,,,,,,,
+D:/xilinx/projects/project_9/project_9.srcs/sources_1/new/Data_Memory_RAM.v,1733173195,verilog,,D:/xilinx/projects/project_9/project_9.srcs/sources_1/new/Output_Ports.v,,Data_Memory_RAM,,,,,,,,
+D:/xilinx/projects/project_9/project_9.srcs/sources_1/new/Output_Ports.v,1730070117,verilog,,D:/xilinx/projects/project_9/project_9.srcs/sources_1/new/Program_Memory_ROM.v,,Output_Ports,,,,,,,,
+D:/xilinx/projects/project_9/project_9.srcs/sources_1/new/Program_Memory_ROM.v,1730070064,verilog,,D:/xilinx/projects/project_9/project_9.srcs/sources_1/new/data_out_Bus.v,,Program_Memory_ROM,,,,,,,,
+D:/xilinx/projects/project_9/project_9.srcs/sources_1/new/data_out_Bus.v,1730070152,verilog,,D:/xilinx/projects/project_9/project_9.srcs/sources_1/new/memory.v,,data_out_Bus,,,,,,,,
+D:/xilinx/projects/project_9/project_9.srcs/sources_1/new/memory.v,1730070055,verilog,,D:/xilinx/projects/project_9/project_9.srcs/sim_1/new/memory_TB.v,,memory,,,,,,,,
