@@ -21,6 +21,7 @@ output reg [1:0]Bus2_Sel,
 output reg [1:0]Bus1_Sel,
 output reg write
     );
+    // lines 25-69 of code came from "Introduction to logic circuits and logic design with Verilog”, 3rd edition by Brock J. LaMeres
     reg [7:0] current_state, next_state;
 
  parameter S_FETCH_0 = 0, // Opcode fetch states
@@ -74,7 +75,7 @@ output reg write
     S_BMI_7 = 39,
     S_MUL_AB_4 = 50, // Multiply A by B
     S_DIV_AB_4 = 51; // Divide A by B
-    
+ // lines 79-132 of code came from "Introduction to logic circuits and logic design with Verilog”, 3rd edition by Brock J. LaMeres   
  parameter LDA_IMM = 8'h86; // Load Register A with Immediate Addressing
  parameter LDA_DIR = 8'h87; // Load Register A with Direct Addressing
  parameter LDB_IMM = 8'h88; // Load Register B with Immediate Addressing
@@ -134,6 +135,7 @@ output reg write
                     else if (IR == DIV_AB) next_state = S_DIV_AB_4; // Div
                     else if (IR == BMI && CCR_Result[0] == 1) next_state = S_BMI_4; // Branch if C = 0
                     //else if (IR == BMI && CCR_Result == 0) next_state = S_BMI_7; // Do nothing if N = 0
+                // lines 139-142 of code came from "Introduction to logic circuits and logic design with Verilog”, 3rd edition by Brock J. LaMeres
                     else next_state = S_FETCH_0; // others go here
                 S_LDA_IMM_4 : next_state = S_LDA_IMM_5; // Path for All instruction
                 S_LDA_IMM_5 : next_state = S_LDA_IMM_6;
@@ -169,7 +171,7 @@ output reg write
 
         // Add next state logic for other states here
         // Add a default statement to handle unknown states
-
+        // lines 175-207 of code came from "Introduction to logic circuits and logic design with Verilog”, 3rd edition by Brock J. LaMeres
         endcase
     end
     // Output logic block
