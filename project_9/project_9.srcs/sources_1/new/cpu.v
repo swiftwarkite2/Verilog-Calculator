@@ -1,27 +1,10 @@
 `timescale 1ns / 1ps
 // Ethan Brown
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11/03/2024 02:52:47 PM
-// Design Name: 
-// Module Name: cpu
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// connects data path and control unit
 //////////////////////////////////////////////////////////////////////////////////
 
-
-module cpu( // connects data path and control unit
+module cpu( 
 input wire [7:0]from_memory,
 input wire clock,
 input wire reset,
