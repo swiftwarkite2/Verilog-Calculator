@@ -1,25 +1,8 @@
 `timescale 1ns / 1ps
 //Ethan Brown
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 10/27/2024 02:02:34 PM
-// Design Name: 
-// Module Name: Program_Memory_ROM
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
+//////////////////////////////////////////////////////////////////////////////////
 
 module Program_Memory_ROM(
 input clock,
@@ -27,6 +10,7 @@ input [7:0]address,
 output reg [7:0]data_out
     );
 reg EN;
+// All of these parameter lines of code came from "Introduction to logic circuits and logic design with Verilog”, 3rd edition by Brock J. LaMeres 
 // Define mnemonics for instruction set
  parameter LDA_IMM = 8'h86; // Load Register A with Immediate Addressing
  parameter LDA_DIR = 8'h87; // Load Register A with Direct Addressing
@@ -57,28 +41,6 @@ reg EN;
  // store the program starting at address 0
  initial
  begin
-// ROM[0] = LDB_DIR;
-// ROM[1] = 8'hF1;
-// ROM[2] = LDA_DIR;
-// ROM[3] = 8'hF0;
-// ROM[4] = ADD_AB;
-// ROM[5] = BMI;
-// ROM[6] = 8'h0B;
-// ROM[7] = STA_DIR;
-// ROM[8] = 8'hE0;
-// ROM[9] = BRA;
-// ROM[10] = 8'h00;
-// ROM[11] = ADD_AB;
-// ROM[12] = STA_DIR;
-// ROM[13] = 8'hE0;
-// ROM[14] = BRA;
-// ROM[15] = 8'h00;
-//ROM[0] = LDA_IMM;
-//ROM[1] = 8'hAA;
-//ROM[2] = STA_DIR;
-//ROM[3] = 8'hE0;
-//ROM[4] = BRA;
-//ROM[5] = 8'h00;
  ROM[0] = LDA_DIR; //checks selector bits to see if it should do divide
  ROM[1] = 8'hF1;
  ROM[2] = LDB_IMM;
@@ -136,7 +98,7 @@ reg EN;
  ROM[48] = 8'hE0;
  ROM[49] = BRA;
  ROM[50] = 8'h00;
- 
+ // the remainder of the code from this module came from this book from "Introduction to logic circuits and logic design with Verilog”, 3rd edition by Brock J. LaMeres 
  end
     always @(address)
         begin
