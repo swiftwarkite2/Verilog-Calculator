@@ -31,7 +31,7 @@ output reg [7:0]address
  wire [7:0]Result;
  reg [7:0]MAR;
  wire [3:0]NZVC;
-    
+     // All of the remaining lines of code came from "Introduction to logic circuits and logic design with Verilog”, 3rd edition by Brock J. LaMeres 
     // Bus1 Mux
  always @(Bus1_Sel,PC,A,B)
     begin: MUX_BUS1
