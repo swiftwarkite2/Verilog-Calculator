@@ -1,25 +1,8 @@
 `timescale 1ns / 1ps
 // Ethan Brown
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11/03/2024 12:42:48 PM
-// Design Name: 
-// Module Name: Data_Path
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
+//////////////////////////////////////////////////////////////////////////////////
 
 module Data_Path(
 input wire IR_Load,
@@ -48,6 +31,7 @@ output reg [7:0]address
  wire [7:0]Result;
  reg [7:0]MAR;
  wire [3:0]NZVC;
+    
     // Bus1 Mux
  always @(Bus1_Sel,PC,A,B)
     begin: MUX_BUS1
