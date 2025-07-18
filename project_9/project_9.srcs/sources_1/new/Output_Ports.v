@@ -1,25 +1,8 @@
 `timescale 1ns / 1ps
 //Ethan Brown
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 10/27/2024 02:08:04 PM
-// Design Name: 
-// Module Name: Output_Ports
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
+//////////////////////////////////////////////////////////////////////////////////
 
 module Output_Ports(
 input clock,
@@ -30,6 +13,7 @@ input write,
 output reg [7:0]port_out_00,
 output reg [7:0]port_out_01
     );
+    // All of the remaining lines of code came from "Introduction to logic circuits and logic design with Verilog”, 3rd edition by Brock J. LaMeres 
     // port_out_00 (address E0)
  always @(posedge clock or negedge reset)
     begin
