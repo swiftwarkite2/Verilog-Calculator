@@ -1,27 +1,10 @@
 `timescale 1ns / 1ps
 // Ethan Brown
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11/03/2024 03:20:54 PM
-// Design Name: 
-// Module Name: top
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// converts basys hardware to computer inputs and outputs
 //////////////////////////////////////////////////////////////////////////////////
 
-
-module top( // converts basys hardware to computer inputs and outputs
+module top( 
 input [15:0]sw,
 input btnU,
 input clk,
