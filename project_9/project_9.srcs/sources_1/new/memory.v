@@ -1,27 +1,10 @@
 `timescale 1ns / 1ps
 // Ethan Brown
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 10/27/2024 02:37:12 PM
-// Design Name: 
-// Module Name: memory
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// within memory connects ROM, RAM, output ports, and data out Bus 
 //////////////////////////////////////////////////////////////////////////////////
 
-
-module memory( // within memory connects ROM, RAM, output ports, and data out Bus 
+module memory( 
 input [7:0]address,
 input [7:0]data_in,
 input write,
