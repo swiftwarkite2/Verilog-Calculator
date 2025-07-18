@@ -1,24 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11/03/2024 01:21:47 PM
-// Design Name: 
-// Module Name: ALU
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
+//////////////////////////////////////////////////////////////////////////////////
 
 module ALU(
 input wire [2:0]ALU_Sel,
@@ -27,6 +10,7 @@ input wire [7:0]In2,
 output reg [3:0]NZVC,
 output reg [7:0]Result
     );
+     // lines 15-35 of code came from "Introduction to logic circuits and logic design with Verilog”, 3rd edition by Brock J. LaMeres 
     // ALU
  always @(In1,In2,ALU_Sel)
     begin
