@@ -1,25 +1,8 @@
 `timescale 1ns / 1ps
 //Ethan Brown
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 10/27/2024 02:06:07 PM
-// Design Name: 
-// Module Name: Data_Memory_RAM
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
+//////////////////////////////////////////////////////////////////////////////////
 
 module Data_Memory_RAM(
 input clock,
@@ -28,6 +11,7 @@ input [7:0]data_in,
 input write,
 output reg [7:0]data_out
     );
+// All of the remaining lines of code came from "Introduction to logic circuits and logic design with Verilog”, 3rd edition by Brock J. LaMeres 
 reg [7:0] RW [128:223]; // define RAM array
 reg EN;
  always @(address)
