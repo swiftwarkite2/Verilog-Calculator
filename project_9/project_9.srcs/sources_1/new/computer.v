@@ -1,27 +1,10 @@
 `timescale 1ns / 1ps
 // Ethan Brown
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11/03/2024 03:08:49 PM
-// Design Name: 
-// Module Name: computer
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// connects memory and cpu
 //////////////////////////////////////////////////////////////////////////////////
 
-
-module computer( // connects memory and cpu
+module computer( 
 input wire clock,
 input wire reset,
 input wire [7:0]port_in_00,
